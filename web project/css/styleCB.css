@@ -12,6 +12,8 @@ h1{font-size: larger; color: #0f8ae8}
 p{ font-weight: 400; color: #faf8f8;word-spacing: 2px;}
 header{
   color: white;
+  display:contents;
+  justify-content: center;
 }
 
 
@@ -21,20 +23,21 @@ header{
 
 .body-container {
   display: grid;
-  margin: 2rem;
+  margin: 0%;
   gap: 0.5rem;
-  padding: 6px;
+  padding: 0%;
   grid-template-columns: fit-content(200px) 1000px;
-  grid-template-rows: 200px fit-content(500px) 250px 150px;
+  grid-template-rows: fit-content(200px) fit-content(500px) 250px 150px;
   grid-template-areas:
     'header header'
     'aside slider'
     'aside main'
     'footer footer';
+    justify-content: center;
 } 
 
 .item-1{
-  grid-column: span 3;
+  grid-column: span 2;
   grid-row: span 2;
   grid-area: header;
   padding: 3px;
@@ -45,13 +48,15 @@ header{
 }
 .item-2{
   grid-column: span 2;
-  grid-row: span 4;
+  grid-row: 1;
  grid-area: aside;
  margin: 2%;
  padding: 2%;
 }
 
 .item-3{
+  grid-column: span 2;
+  grid-row: span 2;
  grid-area: slider;
  display: contents;
  margin-top: 5px;
@@ -60,6 +65,8 @@ header{
 }
 
 .item-4 {
+grid-column: 2;
+grid-row: span 2;
 grid-area: main;
 align-content: center;
 margin: 0%;

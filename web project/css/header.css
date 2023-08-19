@@ -2,12 +2,10 @@
 
 
 .navMenu {
-  position: absolute;
-  top: 33%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  align-self: center;
+  display: inline;
+  text-align: center;
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
 }
 
 .navMenu a {
@@ -27,7 +25,7 @@
 }
 
 .navMenu .dot {
-  grid-area: navbar;
+  display: inline-block;
   width: 6px;
   height: 6px;
   background: #fddb3a;
