@@ -1,0 +1,72 @@
+
+*{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  /* border: 1px red; */
+  /* border-style: solid;   */
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+h1{font-size: larger; color: #0f8ae8}
+p{ font-weight: 400; color: #0a0202;word-spacing: 2px;}
+header{
+  color: white;
+}
+
+
+.body{
+  background: linear-gradient(to right, #300303, #300505 35%, #3d0404 75%, #333 75%);
+}
+
+.body-container {
+  display: grid;
+  margin: 2rem;
+  gap: 0.5rem;
+  padding: 6px;
+  grid-template-columns: fit-content(200px) 1000px;
+  grid-template-rows: 200px 500px 250px 150px;
+  grid-template-areas:
+    'header header'
+    'aside slider'
+    'aside main'
+    'footer footer';
+    border: orange;
+    box-shadow: #333;
+    background-color: antiquewhite;
+} 
+
+.item-1{
+  grid-column: span 3;
+  grid-row: span 2;
+  grid-area: header;
+  max-width: 100%;
+}
+.item-2{
+  grid-column: span 2;
+  grid-row: span 4;
+ grid-area: aside;
+ margin: 5px;
+ padding: 5px;
+ border: #C1CAD1;
+}
+
+.item-3{
+ grid-area: slider;
+ display: contents;
+}
+
+.item-4 {
+grid-area: main;
+align-content: center;
+
+}
+
+.item-5 {
+  grid-area: footer;
+  align-items: left;
+}
+
+
+
+

@@ -1,0 +1,32 @@
+
+.slider{
+    position: relative;
+    height: 450;
+    width: 950;
+    background: url(../media/hawaii.jpg);
+    animation: slide 20s infinite;
+    object-fit: cover;
+
+  }
+     
+  @keyframes slide {
+  
+  25% {
+    
+    background: url(../media/portrait.jpg);
+    }
+  50% {
+   
+    background: url(../media/bomba.jpg);
+    }
+    75% {
+   
+        background: url(../media/desert.jpg);
+        }
+
+  100% {
+   
+    background: url(../media/bomba1.jpg);
+    }
+  }
+  
