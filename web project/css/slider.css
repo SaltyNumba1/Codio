@@ -1,8 +1,7 @@
 
 .slider{
     position: relative;
-    height: 450;
-    width: 950;
+    scale: 100%;
     background: url(../media/hawaii.jpg);
     animation: slide 20s infinite;
     object-fit: cover;
