@@ -47,11 +47,13 @@ header{
   border-width: 2px;
 }
 .item-2{
-  grid-column: span 2;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: span 2;
  grid-area: aside;
  margin: 2%;
  padding: 2%;
+ border-style: ridge;
+ border-color: aqua;
 }
 
 .item-3{
