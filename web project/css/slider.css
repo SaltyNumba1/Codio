@@ -1,7 +1,7 @@
-body {
+main {
   height: 100vh;
   display: grid;
-  place-items: center;
+  place-items: end ;
 }
 
 .slider {

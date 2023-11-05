@@ -6,19 +6,11 @@ slides.forEach((slide, indx) => {
 
   let curSlide = 0;
 
-  const nextSlide = document.querySelector(".btn-next");
+  let maxSlide = slides.length - 1;
 
-  nextSlide.addEventListener("click", function () {
-    curSlide++;
-
- slides.forEach((slide, indx) => {
-        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-      });
-    });
-//Need to find the value that keeps it from skipping 2 slides on next but prev works correctly 
-    let maxSlide = slides.length -1 ;
-
-    nextSlide.addEventListener("click", function () {
+    const nextSlide = document.querySelector(".btn-next");
+    
+      nextSlide.addEventListener("click", function () {
         if (curSlide === maxSlide) {
             curSlide = 0;
           } else {
@@ -29,13 +21,13 @@ slides.forEach((slide, indx) => {
           });
         });
 
-        const prevSlide = document.querySelector(".btn-prev");
+  const prevSlide = document.querySelector(".btn-prev");
 
-    prevSlide.addEventListener("click", function () {
+     prevSlide.addEventListener("click", function () {
         if (curSlide === 0) {
             curSlide = maxSlide;
           } else {
-            curSlide--;
+            curSlide --;
           }
 
           slides.forEach((slide, indx) => {
